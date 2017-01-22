@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple"
+    android:clickable="true"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imageDP"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageDp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/imageDP"
+        android:text="Kevin Hart"
+        android:textColor="#555"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/imageDP"
+        android:text="Height: 5' 4"
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeight"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/imageDP"
+        android:text="1st June 1986"
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDOB"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/imageDP"
+        android:text="Tanzanian"
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageDP"
+        android:layout_marginTop="4dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        android:textColor="#666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/titleSpouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Spouse:"
+        android:textColor="#666"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSpouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/titleSpouse"
+        android:text="Married to..."
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/titleChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpouse"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Children:"
+        android:textColor="#666"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpouse"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/titleChildren"
+        android:text="Children..."
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+</RelativeLayout>
